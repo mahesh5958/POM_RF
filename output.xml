@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20191115 11:07:30.955" rpa="false">
+<suite id="s1" name="POM RF" source="D:\RobotFramework\POM_RF">
+<suite id="s1-s1" name="TestCases" source="D:\RobotFramework\POM_RF\TestCases">
+<suite id="s1-s1-s1" name="LoginTest" source="D:\RobotFramework\POM_RF\TestCases\LoginTest.robot">
+<test id="s1-s1-s1-t1" name="Login Test">
+<kw name="Open My Browser" library="LoginKeywords">
+<arguments>
+<arg>${siteUrl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${siteUrl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20191115 11:07:32.079" level="INFO">Opening browser 'headlesschrome' to base url 'http://newtours.demoaut.com/'.</msg>
+<status status="PASS" starttime="20191115 11:07:32.075" endtime="20191115 11:07:42.550"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20191115 11:07:42.551" endtime="20191115 11:07:46.710"></status>
+</kw>
+<status status="PASS" starttime="20191115 11:07:32.073" endtime="20191115 11:07:46.712"></status>
+</kw>
+<kw name="Enter User Name" library="LoginKeywords">
+<arguments>
+<arg>${user}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${text_loginUserName}</arg>
+<arg>${userName}</arg>
+</arguments>
+<msg timestamp="20191115 11:07:46.716" level="INFO">Typing text 'tutorial' into text field 'name:userName'.</msg>
+<status status="PASS" starttime="20191115 11:07:46.715" endtime="20191115 11:07:46.881"></status>
+</kw>
+<status status="PASS" starttime="20191115 11:07:46.712" endtime="20191115 11:07:46.882"></status>
+</kw>
+<kw name="Enter Password" library="LoginKeywords">
+<arguments>
+<arg>${pwd}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_loginPassword}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20191115 11:07:46.884" level="INFO">Typing text 'tutorial' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20191115 11:07:46.883" endtime="20191115 11:07:47.041"></status>
+</kw>
+<status status="PASS" starttime="20191115 11:07:46.882" endtime="20191115 11:07:47.042"></status>
+</kw>
+<kw name="Click SignIn" library="LoginKeywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_signIn}</arg>
+</arguments>
+<msg timestamp="20191115 11:07:47.045" level="INFO">Clicking button 'xpath://input[@name='login']'.</msg>
+<status status="PASS" starttime="20191115 11:07:47.044" endtime="20191115 11:08:02.930"></status>
+</kw>
+<status status="PASS" starttime="20191115 11:07:47.043" endtime="20191115 11:08:02.931"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20191115 11:08:04.935" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20191115 11:08:02.932" endtime="20191115 11:08:04.935"></status>
+</kw>
+<kw name="Verify Successfull Login" library="LoginKeywords">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Find a Flight: Mercury Tours:</arg>
+</arguments>
+<msg timestamp="20191115 11:08:04.948" level="INFO">Page title is 'Find a Flight: Mercury Tours:'.</msg>
+<status status="PASS" starttime="20191115 11:08:04.937" endtime="20191115 11:08:04.949"></status>
+</kw>
+<status status="PASS" starttime="20191115 11:08:04.936" endtime="20191115 11:08:04.949"></status>
+</kw>
+<kw name="Close My Browsers" library="LoginKeywords">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20191115 11:08:04.951" endtime="20191115 11:08:07.099"></status>
+</kw>
+<status status="PASS" starttime="20191115 11:08:04.950" endtime="20191115 11:08:07.100"></status>
+</kw>
+<status status="PASS" starttime="20191115 11:07:32.066" endtime="20191115 11:08:07.101" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191115 11:07:31.307" endtime="20191115 11:08:07.103"></status>
+</suite>
+<suite id="s1-s1-s2" name="RegistrationTest" source="D:\RobotFramework\POM_RF\TestCases\RegistrationTest.robot">
+<test id="s1-s1-s2-t1" name="Registration Test">
+<kw name="Open My Browser" library="RegistrationKeywords">
+<arguments>
+<arg>${siteUrl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${siteUrl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20191115 11:08:07.131" level="INFO">Opening browser 'headlessfirefox' to base url 'http://newtours.demoaut.com/'.</msg>
+<msg timestamp="20191115 11:08:07.152" level="INFO">Firefox driver log is always forced to to: D:\RobotFramework\POM_RF\geckodriver-1.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20191115 11:08:07.184" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20191115 11:08:07.183" endtime="20191115 11:08:07.185"></status>
+</kw>
+<msg timestamp="20191115 11:08:07.272" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20191115 11:08:07.130" endtime="20191115 11:08:07.273"></status>
+</kw>
+<status status="FAIL" starttime="20191115 11:08:07.129" endtime="20191115 11:08:07.273"></status>
+</kw>
+<status status="FAIL" starttime="20191115 11:08:07.127" endtime="20191115 11:08:07.274" critical="yes">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<status status="FAIL" starttime="20191115 11:08:07.109" endtime="20191115 11:08:07.275"></status>
+</suite>
+<status status="FAIL" starttime="20191115 11:07:31.296" endtime="20191115 11:08:07.280"></status>
+</suite>
+<status status="FAIL" starttime="20191115 11:07:31.228" endtime="20191115 11:08:07.283"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" id="s1" name="POM RF">POM RF</stat>
+<stat pass="1" fail="1" id="s1-s1" name="TestCases">POM RF.TestCases</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="LoginTest">POM RF.TestCases.LoginTest</stat>
+<stat pass="0" fail="1" id="s1-s1-s2" name="RegistrationTest">POM RF.TestCases.RegistrationTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

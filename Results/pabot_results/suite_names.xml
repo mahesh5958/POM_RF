@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20191115 11:10:28.638" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="LoginTest" source="D:\RobotFramework\POM_RF\TestCases\LoginTest.robot">
+<test id="s1-s1-t1" name="Login Test">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20191115 11:10:29.119" endtime="20191115 11:10:29.119"></status>
+</kw>
+<status status="PASS" starttime="20191115 11:10:29.118" endtime="20191115 11:10:29.119" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191115 11:10:28.699" endtime="20191115 11:10:29.120"></status>
+</suite>
+<suite id="s1-s2" name="RegistrationTest" source="D:\RobotFramework\POM_RF\TestCases\RegistrationTest.robot">
+<test id="s1-s2-t1" name="Registration Test">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" starttime="20191115 11:10:29.145" endtime="20191115 11:10:29.145"></status>
+</kw>
+<status status="PASS" starttime="20191115 11:10:29.144" endtime="20191115 11:10:29.145" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191115 11:10:29.122" endtime="20191115 11:10:29.145"></status>
+</suite>
+<status status="PASS" starttime="20191115 11:10:28.643" endtime="20191115 11:10:29.147"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" id="s1-s1" name="LoginTest">Suites.LoginTest</stat>
+<stat pass="1" fail="0" id="s1-s2" name="RegistrationTest">Suites.RegistrationTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
